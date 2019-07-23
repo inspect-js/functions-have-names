@@ -4,7 +4,8 @@
 	"description": "Does this JS environment support the `name` property on functions?",
 	"main": "index.js",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"posttest": "npx aud"
 	},
 	"repository": {
 		"type": "git",
