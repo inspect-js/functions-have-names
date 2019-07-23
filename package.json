@@ -6,7 +6,8 @@
 	"scripts": {
 		"lint": "eslint .",
 		"pretest": "npm run lint",
-		"test": "echo \"Error: no test specified\" && exit 1",
+		"tests-only": "node test",
+		"test": "npm run tests-only",
 		"posttest": "npx aud"
 	},
 	"repository": {
@@ -29,6 +30,7 @@
 	"homepage": "https://github.com/ljharb/functions-have-names#readme",
 	"devDependencies": {
 		"@ljharb/eslint-config": "^13.1.1",
-		"eslint": "^5.16.0"
+		"eslint": "^5.16.0",
+		"tape": "^4.11.0"
 	}
 }
