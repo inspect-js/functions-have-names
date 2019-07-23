@@ -4,6 +4,8 @@
 	"description": "Does this JS environment support the `name` property on functions?",
 	"main": "index.js",
 	"scripts": {
+		"lint": "eslint .",
+		"pretest": "npm run lint",
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"posttest": "npx aud"
 	},
@@ -24,5 +26,9 @@
 	"bugs": {
 		"url": "https://github.com/ljharb/functions-have-names/issues"
 	},
-	"homepage": "https://github.com/ljharb/functions-have-names#readme"
+	"homepage": "https://github.com/ljharb/functions-have-names#readme",
+	"devDependencies": {
+		"@ljharb/eslint-config": "^13.1.1",
+		"eslint": "^5.16.0"
+	}
 }
