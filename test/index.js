@@ -5,7 +5,7 @@ var test = require('tape');
 var hasNames = require('../');
 
 test('named functions', function (t) {
-	function f() {}
+	function f() {} // eslint-disable-line func-style
 	var g = function h() {};
 
 	t.equal(hasNames(), f.name === 'f' && g.name === 'h', 'functions have names or not as expected');
