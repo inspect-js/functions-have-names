@@ -20,7 +20,9 @@ test('functionsHaveConfigurableNames', function (t) {
 	if (hasNames()) {
 		var fn = function f() {};
 		if (Object.defineProperty) {
-			Object.defineProperty(fn, 'name', { configurable: true, value: 'foo' });
+			try {
+				Object.defineProperty(fn, 'name', { configurable: true, value: 'foo' });
+			} catch (e) {}
 			if (fn.name === 'f') {
 				t.equal(hasNames.functionsHaveConfigurableNames(), false, 'function names are not configurable');
 			} else if (fn.name === 'foo') {
