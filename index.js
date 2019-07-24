@@ -1,7 +1,7 @@
 'use strict';
 
 var functionsHaveNames = function functionsHaveNames() {
-	return function f() {}.name === 'f';
+	return typeof function f() {}.name === 'string';
 };
 
 var gOPD = Object.getOwnPropertyDescriptor;
