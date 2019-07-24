@@ -1,6 +1,6 @@
 {
 	"name": "functions-have-names",
-	"version": "1.1.0",
+	"version": "1.1.1",
 	"description": "Does this JS environment support the `name` property on functions?",
 	"main": "index.js",
 	"scripts": {
