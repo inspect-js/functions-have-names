@@ -39,3 +39,18 @@ test('functionsHaveConfigurableNames', function (t) {
 
 	t.end();
 });
+
+test('boundFunctionsHaveNames', function (t) {
+	t.equal(typeof hasNames.boundFunctionsHaveNames, 'function', 'is a function');
+
+	var fn = function f() {};
+	if (typeof fn.bind !== 'function') {
+		t.equal(hasNames.boundFunctionsHaveNames(), false, 'bound functions do not have names, because .bind does not exist');
+	} else if (hasNames()) {
+		t.equal(hasNames.boundFunctionsHaveNames(), fn.bind().name !== '', 'bound functions have names');
+	} else {
+		t.equal(hasNames.boundFunctionsHaveNames(), false, 'bound functions do not have names, because none do');
+	}
+
+	t.end();
+});

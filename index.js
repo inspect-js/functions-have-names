@@ -10,4 +10,10 @@ functionsHaveNames.functionsHaveConfigurableNames = function functionsHaveConfig
 	return functionsHaveNames() && gOPD && !!gOPD(function () {}, 'name').configurable;
 };
 
+var $bind = Function.prototype.bind;
+
+functionsHaveNames.boundFunctionsHaveNames = function boundFunctionsHaveNames() {
+	return functionsHaveNames() && typeof $bind === 'function' && (function f() {}).bind().name !== '';
+};
+
 module.exports = functionsHaveNames;
