@@ -13,7 +13,7 @@ functionsHaveNames.functionsHaveConfigurableNames = function functionsHaveConfig
 var $bind = Function.prototype.bind;
 
 functionsHaveNames.boundFunctionsHaveNames = function boundFunctionsHaveNames() {
-	return functionsHaveNames() && typeof $bind === 'function' && (function f() {}).bind().name !== '';
+	return functionsHaveNames() && typeof $bind === 'function' && function f() {}.bind().name !== '';
 };
 
 module.exports = functionsHaveNames;
