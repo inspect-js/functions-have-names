@@ -4,6 +4,7 @@
 	"description": "Does this JS environment support the `name` property on functions?",
 	"main": "index.js",
 	"scripts": {
+		"prepublish": "safe-publish-latest",
 		"version": "auto-changelog && git add CHANGELOG.md",
 		"postversion": "auto-changelog && git add CHANGELOG.md && git commit --no-edit --amend && git tag -f \"v$(node -e \"console.log(require('./package.json').version)\")\"",
 		"lint": "eslint .",
@@ -34,9 +35,10 @@
 	},
 	"homepage": "https://github.com/ljharb/functions-have-names#readme",
 	"devDependencies": {
-		"@ljharb/eslint-config": "^14.1.0",
-		"auto-changelog": "^1.16.1",
-		"eslint": "^6.5.1",
+		"@ljharb/eslint-config": "^15.0.1",
+		"auto-changelog": "^1.16.2",
+		"eslint": "^6.6.0",
+		"safe-publish-latest": "^1.1.4",
 		"tape": "^4.11.0"
 	},
 	"auto-changelog": {
