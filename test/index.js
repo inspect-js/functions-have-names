@@ -14,14 +14,23 @@ test('named functions', function (t) {
 	t.end();
 });
 
+var oDP = Object.defineProperty;
+if (oDP) {
+	try {
+		oDP({}, 'a', { value: 1 });
+	} catch (e) {
+		oDP = null;
+	}
+}
+
 test('functionsHaveConfigurableNames', function (t) {
 	t.equal(typeof hasNames.functionsHaveConfigurableNames, 'function', 'is a function');
 
 	if (hasNames()) {
 		var fn = function f() {};
-		if (Object.defineProperty) {
+		if (oDP) {
 			try {
-				Object.defineProperty(fn, 'name', { configurable: true, value: 'foo' });
+				oDP(fn, 'name', { configurable: true, value: 'foo' });
 			} catch (e) {}
 			if (fn.name === 'f') {
 				t.equal(hasNames.functionsHaveConfigurableNames(), false, 'function names are not configurable');

@@ -5,6 +5,14 @@ var functionsHaveNames = function functionsHaveNames() {
 };
 
 var gOPD = Object.getOwnPropertyDescriptor;
+if (gOPD) {
+	try {
+		gOPD([], 'length');
+	} catch (e) {
+		// IE 8 has a broken gOPD
+		gOPD = null;
+	}
+}
 
 functionsHaveNames.functionsHaveConfigurableNames = function functionsHaveConfigurableNames() {
 	return functionsHaveNames() && gOPD && !!gOPD(function () {}, 'name').configurable;
