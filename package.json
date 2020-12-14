@@ -7,11 +7,11 @@
 		"prepublish": "safe-publish-latest",
 		"version": "auto-changelog && git add CHANGELOG.md",
 		"postversion": "auto-changelog && git add CHANGELOG.md && git commit --no-edit --amend && git tag -f \"v$(node -e \"console.log(require('./package.json').version)\")\"",
-		"lint": "eslint .",
+		"lint": "eslint --ext=js,mjs .",
 		"pretest": "npm run lint",
-		"tests-only": "node test",
+		"tests-only": "nyc tape 'test/**/*.js'",
 		"test": "npm run tests-only",
-		"posttest": "npx aud --production"
+		"posttest": "aud --production"
 	},
 	"repository": {
 		"type": "git",
@@ -39,6 +39,7 @@
 		"aud": "^1.1.0",
 		"auto-changelog": "^2.0.0",
 		"eslint": "^6.8.0",
+		"nyc": "^10.3.2",
 		"safe-publish-latest": "^1.1.4",
 		"tape": "^5.0.0-next.5"
 	},
