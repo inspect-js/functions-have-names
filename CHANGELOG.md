@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
+#### [v1.2.2](https://github.com/inspect-js/functions-have-names/compare/v1.2.1...v1.2.2)
+
+> 14 December 2020
+
+- [Tests] migrate tests to Github Actions [`39bf4fe`](https://github.com/inspect-js/functions-have-names/commit/39bf4fe5ae5b3610a80ba13726f3ee00e3c49e2f)
+- [meta] do not publish github action workflow files [`45ab0cb`](https://github.com/inspect-js/functions-have-names/commit/45ab0cbdc0da2efd64f5deb9810be63009bac4a0)
+- [readme] add docs, fix URLs [`fad3af6`](https://github.com/inspect-js/functions-have-names/commit/fad3af61e9cbc27f47d2097614f43c62ae1022dd)
+- [Dev Deps] update `eslint`, `@ljharb/eslint-config`, `aud`, `auto-changelog`, `tape` [`82df94a`](https://github.com/inspect-js/functions-have-names/commit/82df94ae06f05a5fa321dda9b7d902ac9fc26424)
+- [Tests] run `nyc` on all tests; use `tape` runner [`8038329`](https://github.com/inspect-js/functions-have-names/commit/8038329fec493043639d9d8c779141dcb7d00c2d)
+- [actions] add automatic rebasing / merge commit blocking [`49795eb`](https://github.com/inspect-js/functions-have-names/commit/49795ebf38ae3ba724ff7ac5c53598ec66ab814b)
+- [actions] add "Allow Edits" workflow [`2096fe6`](https://github.com/inspect-js/functions-have-names/commit/2096fe6d67d435c0e0da25f3cfe9ff02991c41e6)
+- [actions] switch Automatic Rebase workflow to `pull_request_target` event [`ec1c6fe`](https://github.com/inspect-js/functions-have-names/commit/ec1c6fe209419c722d732cd512e4375c48366392)
+- [Dev Deps] update `auto-changelog`; add `aud` [`79fdb23`](https://github.com/inspect-js/functions-have-names/commit/79fdb23d1ed2b4125f443be193c37330e634e654)
+- [Tests] only audit prod deps [`d9ca245`](https://github.com/inspect-js/functions-have-names/commit/d9ca2455e26a45994024d1027344c268a06818bd)
+- [Dev Deps] update `auto-changelog`, `tape` [`ac026d4`](https://github.com/inspect-js/functions-have-names/commit/ac026d4bda77e9820b74456fc752d2069e5b8a7f)
+- [Dev Deps] update `tape` [`a8c5ee3`](https://github.com/inspect-js/functions-have-names/commit/a8c5ee3622b487938462f82698dae3ceb32da1a7)
+- [Dev Deps] update `@ljharb/eslint-config` [`b25fafd`](https://github.com/inspect-js/functions-have-names/commit/b25fafd0923dcf53c3aeca92268e497ffd96ec34)
+
 #### [v1.2.1](https://github.com/inspect-js/functions-have-names/compare/v1.2.0...v1.2.1)
 
 > 19 January 2020
