@@ -1,10 +1,13 @@
-### Changelog
+# Changelog
 
-All notable changes to this project will be documented in this file. Dates are displayed in UTC.
+All notable changes to this project will be documented in this file.
 
-#### [v1.2.2](https://github.com/inspect-js/functions-have-names/compare/v1.2.1...v1.2.2)
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-> 14 December 2020
+## [v1.2.2](https://github.com/inspect-js/functions-have-names/compare/v1.2.1...v1.2.2) - 2020-12-14
+
+### Commits
 
 - [Tests] migrate tests to Github Actions [`39bf4fe`](https://github.com/inspect-js/functions-have-names/commit/39bf4fe5ae5b3610a80ba13726f3ee00e3c49e2f)
 - [meta] do not publish github action workflow files [`45ab0cb`](https://github.com/inspect-js/functions-have-names/commit/45ab0cbdc0da2efd64f5deb9810be63009bac4a0)
@@ -20,9 +23,9 @@ All notable changes to this project will be documented in this file. Dates are d
 - [Dev Deps] update `tape` [`a8c5ee3`](https://github.com/inspect-js/functions-have-names/commit/a8c5ee3622b487938462f82698dae3ceb32da1a7)
 - [Dev Deps] update `@ljharb/eslint-config` [`b25fafd`](https://github.com/inspect-js/functions-have-names/commit/b25fafd0923dcf53c3aeca92268e497ffd96ec34)
 
-#### [v1.2.1](https://github.com/inspect-js/functions-have-names/compare/v1.2.0...v1.2.1)
+## [v1.2.1](https://github.com/inspect-js/functions-have-names/compare/v1.2.0...v1.2.1) - 2020-01-19
 
-> 19 January 2020
+### Commits
 
 - [Tests] use shared travis-ci configs [`612823a`](https://github.com/inspect-js/functions-have-names/commit/612823a064b4be4c61a1e52d1009abed4a4fc4fb)
 - [Fix] IE 8 has a broken `Object.getOwnPropertyDescriptor` [`ba01c22`](https://github.com/inspect-js/functions-have-names/commit/ba01c22795162b787a698950ea34250ce68a7bb1)
@@ -30,30 +33,30 @@ All notable changes to this project will be documented in this file. Dates are d
 - [Dev Deps] update `eslint`, `@ljharb/eslint-config`, `tape` [`a62fbd6`](https://github.com/inspect-js/functions-have-names/commit/a62fbd69a34a2b1d1860acfa2afc6dcc839bc180)
 - [meta] add `funding` field [`8734a94`](https://github.com/inspect-js/functions-have-names/commit/8734a940e39acdf7619eb89e358746bd278b4c90)
 
-#### [v1.2.0](https://github.com/inspect-js/functions-have-names/compare/v1.1.1...v1.2.0)
+## [v1.2.0](https://github.com/inspect-js/functions-have-names/compare/v1.1.1...v1.2.0) - 2019-10-20
 
-> 20 October 2019
+### Commits
 
 - [Dev Deps] update `eslint`, `@ljharb/eslint-config`, `auto-changelog` [`7e07444`](https://github.com/inspect-js/functions-have-names/commit/7e0744437789641ea462005d2e350ef476aa7141)
 - [New] add `boundFunctionsHaveNames()` [`05661be`](https://github.com/inspect-js/functions-have-names/commit/05661be26c3c260bb3984e433dc9cea3fd82f9ac)
 
-#### [v1.1.1](https://github.com/inspect-js/functions-have-names/compare/v1.1.0...v1.1.1)
+## [v1.1.1](https://github.com/inspect-js/functions-have-names/compare/v1.1.0...v1.1.1) - 2019-07-24
 
-> 24 July 2019
+### Commits
 
 - [Tests] fix linting errors [`0cb8017`](https://github.com/inspect-js/functions-have-names/commit/0cb8017203ae37d1e019bb1c99120f3f56a266a5)
 - [Tests] fix tests when name is not configurable [`38a8aee`](https://github.com/inspect-js/functions-have-names/commit/38a8aeee0403bd7aa7f35da76dc433cbcdd3f85a)
 - [Fix] ensure function name mangling does not break detection [`f6926ab`](https://github.com/inspect-js/functions-have-names/commit/f6926abaaebc81366f73cf0c3f874ad7e4ba16d2)
 
-#### [v1.1.0](https://github.com/inspect-js/functions-have-names/compare/v1.0.0...v1.1.0)
+## [v1.1.0](https://github.com/inspect-js/functions-have-names/compare/v1.0.0...v1.1.0) - 2019-07-23
 
-> 23 July 2019
+### Commits
 
 - [New] add `functionsHaveConfigurableNames` function on main export [`ce73f75`](https://github.com/inspect-js/functions-have-names/commit/ce73f75891640a462326df7266d90b09519a5fca)
 
-#### v1.0.0
+## v1.0.0 - 2019-07-22
 
-> 22 July 2019
+### Commits
 
 - [Tests] add travis.yml [`06ed096`](https://github.com/inspect-js/functions-have-names/commit/06ed09681a3dc067094562e8d21a31400a782add)
 - Initial commit [`ced60bd`](https://github.com/inspect-js/functions-have-names/commit/ced60bd089539eb228c68fc2ad7c7bc04b959b02)
