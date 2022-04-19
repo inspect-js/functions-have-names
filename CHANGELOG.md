@@ -5,6 +5,25 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.2.3](https://github.com/inspect-js/functions-have-names/compare/v1.2.2...v1.2.3) - 2022-04-19
+
+### Fixed
+
+- [Fix] in IE 9-11, the descriptor is absent [`#11`](https://github.com/inspect-js/functions-have-names/issues/11) [`#25`](https://github.com/es-shims/RegExp.prototype.flags/issues/25)
+
+### Commits
+
+- [actions] reuse common workflows [`4ed274a`](https://github.com/inspect-js/functions-have-names/commit/4ed274a2441c7fd38ff6add741c309e268550d97)
+- [actions] use `node/install` instead of `node/run`; use `codecov` action [`96dfcaa`](https://github.com/inspect-js/functions-have-names/commit/96dfcaaf1c9c5305f2b66ef69f9cddf1d9d9a578)
+- [Dev Deps] update `eslint`, `@ljharb/eslint-config`, `aud`, `auto-changelog`, `tape` [`9e674f8`](https://github.com/inspect-js/functions-have-names/commit/9e674f85520a93235e412a3fd7671d2356c6e45b)
+- [readme] add github actions/codecov badges; update URLs [`d913f5b`](https://github.com/inspect-js/functions-have-names/commit/d913f5bf38ccab32d5fbea4a044b9cd93a4b9bec)
+- [Dev Deps] update `eslint`, `@ljharb/eslint-config`, `aud`, `auto-changelog`, `safe-publish-latest`, `tape` [`f61058f`](https://github.com/inspect-js/functions-have-names/commit/f61058fe1e34f2cfa9235283a4fc6c0c0172c91a)
+- [actions] update codecov uploader [`3348839`](https://github.com/inspect-js/functions-have-names/commit/33488394e7cadbf499bee4775c627c1370d033d0)
+- [Dev Deps] update `eslint`, `@ljharb/eslint-config`, `safe-publish-latest`, `tape` [`ee1a321`](https://github.com/inspect-js/functions-have-names/commit/ee1a3211a40902af59aa629e3ac41ec36360dc1b)
+- [Dev Deps] update `eslint`, `@ljharb/eslint-config`, `tape` [`b8dc1a2`](https://github.com/inspect-js/functions-have-names/commit/b8dc1a277b08362bebedfeba2faca8964f68283b)
+- [Dev Deps] update `@ljharb/eslint-config`, `tape` [`0e825c4`](https://github.com/inspect-js/functions-have-names/commit/0e825c4ba8525b02d9acaaf2511371f76c0562ce)
+- [meta] use `prepublishOnly` script for npm 7+ [`9489d66`](https://github.com/inspect-js/functions-have-names/commit/9489d666c59702ea6bafd3ff611b3eadfee6570e)
+
 ## [v1.2.2](https://github.com/inspect-js/functions-have-names/compare/v1.2.1...v1.2.2) - 2020-12-14
 
 ### Commits
