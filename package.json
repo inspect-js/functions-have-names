@@ -13,7 +13,7 @@
 		"pretest": "npm run lint",
 		"tests-only": "nyc tape 'test/**/*.js'",
 		"test": "npm run tests-only",
-		"posttest": "aud --production"
+		"posttest": "npx npm@\">= 10.2\" audit --production"
 	},
 	"repository": {
 		"type": "git",
@@ -38,7 +38,6 @@
 	"homepage": "https://github.com/inspect-js/functions-have-names#readme",
 	"devDependencies": {
 		"@ljharb/eslint-config": "^22.2.1",
-		"aud": "^3.0.1",
 		"auto-changelog": "^2.4.0",
 		"eslint": "^10.0.3",
 		"in-publish": "^2.0.1",
